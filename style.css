@@ -9,18 +9,16 @@
  * mobile version below 620px
  * paragraphs aligned around logo image
  */
-html {
-  background: url('stoneglove-background.jpg') no-repeat #fff;
-  background-size: contain;
-  background-position: bottom;
-}
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
 }
 .container {
     padding: 64px;
-    margin-bottom: 9.5%;
+}
+.contact {
+    position: relative;
+    z-index: 2;
 }
 h1 {
   background: url('stoneglove-logo.jpg') no-repeat;
@@ -52,27 +50,42 @@ footer {
   font-size: 15px;
   color:#95d600 ;
   background-color: #2e5595;
-  padding: 44px 0;
   text-align: center;
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
 }
+footer .bg {
+    background: url(stoneglove-background.jpg) no-repeat #fff;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 270px;
+}
 footer br {
   display: none;
 }
+
+footer p {
+  padding: 44px 0;
+}
 /* mobile styles for less than 620px */
 @media only screen and (max-width: 836px) {
+  h1 {
+    background-size: 85% 100%;
+    margin-top: 0;
+  }
   .about {
     position: unset;
     width: auto;
   }
   .container {
     padding: 32px;
+    margin-bottom: 150px;
   }
-  footer {
+  footer p {
     padding: 20px 0;
+    font-size: 13px;
   }
   footer br {
     display: block;
