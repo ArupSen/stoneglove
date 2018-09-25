@@ -16,7 +16,7 @@ body {
 .container {
     padding: 64px;
 }
-.contact {
+.contact, .about, h1, h2 {
     position: relative;
     z-index: 2;
 }
@@ -48,7 +48,6 @@ a:hover {
 }
 footer {
   font-size: 15px;
-  color:#95d600 ;
   background-color: #2e5595;
   text-align: center;
   position: fixed;
@@ -56,11 +55,14 @@ footer {
   right: 0;
   left: 0;
 }
+footer p {
+  color:#95d600;
+}
 footer .bg {
     background: url(stoneglove-background.jpg) no-repeat #fff;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
-    min-height: 270px;
+    min-height: 40em;
 }
 footer br {
   display: none;
@@ -72,20 +74,30 @@ footer p {
 /* mobile styles for less than 620px */
 @media only screen and (max-width: 836px) {
   h1 {
-    background-size: 85% 100%;
-    margin-top: 0;
+    background-size: 85%;
+    margin: 0;
+    padding-bottom: 8.5%;
   }
   .about {
-    position: unset;
+    position: relative;
     width: auto;
+    top: 0;
+    left: 0;
   }
   .container {
     padding: 32px;
-    margin-bottom: 150px;
+    margin-bottom: -170px;
+  }
+  footer {
+    position: relative;
+  }
+  footer .bg {
+    min-height: 15em;
   }
   footer p {
     padding: 20px 0;
     font-size: 13px;
+    margin-bottom: 0;
   }
   footer br {
     display: block;
