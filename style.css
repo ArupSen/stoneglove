@@ -77,9 +77,7 @@ footer p {
 /* mobile styles for less than 620px */
 @media only screen and (max-width: 836px) {
   h1 {
-    background-size: 85%;
     margin: 0;
-    padding-bottom: 8.5%;
   }
   .about {
     position: relative;
@@ -104,5 +102,12 @@ footer p {
   }
   footer br {
     display: block;
+  }
+}
+@media only screen and (max-width: 420px) {
+  h1 {
+    background-size: 85%;
+    margin: 0;
+    padding-bottom: 2.5%;
   }
 }
